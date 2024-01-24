@@ -21,13 +21,14 @@ public class platform : MonoBehaviour
             //weak platform
             if (platformType == PlatformType.weak) ;
             {
-                if (GetComponent<Animation>() != null)
+                if (GetComponent<Animator>() != null)
                 {
                     GetComponent<Animator>().SetTrigger("Trigger");
                     // gameObject.SetActive(false);
                     Invoke("HideGameObject",0.4f);
                 }
             }
+            
         }
     }
 
